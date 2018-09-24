@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de-de">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Lippacher Hof  | Lage &amp; Kontakt</title>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <link rel="stylesheet" href="https://lippacherhof.github.io/lib/semantic.min.css">
+  <link rel="stylesheet" href="https://lippacherhof.github.io/styles.css">
+  <link rel="shortcut icon" href="https://lippacherhof.github.io/favicon.png" type="image/x-icon"> <meta name="description" content="">
+<meta name="og:title" content="Lage &amp; Kontakt">
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/49084558-7f89-4650-abc9-d0902b866438.css" />
+  <script type="text/javascript" src="https://lippacherhof.github.io/lib/jquery.min.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+</head>
+
+<body>
+   
+<header>
+  <div id="desktopnav">
+    <div class="ui container">
+      <a href="/" id="logolink">
+        <img class="logo" src="https://res.cloudinary.com/b-coding/image/fetch/c_scale,h_200,f_auto/https://lippacherhof.github.io/uploads/2018/09/22/Logo_Lippacher_Hof.png" />
+      </a>
+      <div id="headermenu">
+        
+        <a class="headermenuitem "
+          href="/" title="Home">Home</a>
+        
+      </div>
+    </div>
+  </div>
+  <div id="mobilenav">
+    <div class="ui container">
+      <a href="/" id="logolink">
+        <img class="logo" src="https://res.cloudinary.com/b-coding/image/fetch/c_scale,h_200,f_auto/https://lippacherhof.github.io/uploads/2018/09/22/Logo_Lippacher_Hof.png" />
+      </a>
+      <div class="ui basic icon button" id="mobilemenutoggle">
+        <i class="bars icon"></i>
+      </div>
+    </div>
+    <div id="headermenu">
+      
+      <a class="headermenuitem "
+        href="/" title="Home">Home</a>
+      
+    </div>
+  </div>
+</header>
+  <main role="main">
+    
+<div class="subpage">
+  <div class="ui container standard">
+    <h1>Lage &amp; Kontakt</h1>
+    <div class="content">
+      
+    </div>
+  </div>
+</div>
+
+  </main>
+  
+<footer class="ui container fluid ">
+  <div class="footermenu">
+     
+    <a href="/datenschutz/" title="Datenschutzerkärung">Datenschutzerkärung</a>
+    
+    <a href="/impressum/" title="Impressum">Impressum</a>
+    
+    <a href="/haftungsausschluss/" title="Haftungsausschluss">Haftungsausschluss</a>
+    
+  </div>
+  <a href="http://elvirabeck-design.de" target="_blank">elvira.beck | design</a>
+</footer>
+
+  <script type="text/javascript" src="https://lippacherhof.github.io/lib/semantic.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(window).scroll(function () {
+        var pos = window.pageYOffset || document.documentElement.scrollTop;
+        if (pos === 0) {
+          $('header').removeClass('scrolled');
+          $('.logo').removeClass('scrolled');
+        }
+        if (pos > 0 && !$('header').hasClass('scrolled')) {
+          $('header').addClass('scrolled');
+          $('.logo').addClass('scrolled');
+        }
+      });
+      $('.shape').click(function () {
+        $(this).shape('flip back');
+      });
+      $('.ui.embed').embed();
+      $('#mobilemenutoggle').click(() => {
+        if ($('#mobilenav #headermenu').hasClass('vis')) {
+          $('#mobilenav #headermenu').removeClass('vis');
+          $('#mobilemenutoggle i').removeClass('chevron up');
+          $('#mobilemenutoggle i').addClass('bars');
+        } else {
+          $('#mobilenav #headermenu').addClass('vis');
+          $('#mobilemenutoggle i').addClass('chevron up');
+          $('#mobilemenutoggle i').removeClass('bars');
+        }
+      });
+      $('#kform')
+        .form({
+          fields: {
+            name: {
+              identifier: 'name',
+              rules: [
+                {
+                  type: 'empty',
+                  prompt: 'Bitte geben Sie Ihren Namen an'
+                }
+              ]
+            },
+            email: {
+              identifier: 'email',
+              rules: [
+                {
+                  type: 'email',
+                  prompt: 'Bitte geben Sie eine gültige Emailadresse an.'
+                }
+              ]
+            },
+            message: {
+              identifier: 'message',
+              rules: [
+                {
+                  type: 'minLength[5]',
+                  prompt: 'Bitte geben Sie eine Nachricht an.'
+                }
+              ]
+            }
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

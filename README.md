@@ -1,1 +1,0 @@
-# lippacherhof.github.io
