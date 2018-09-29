@@ -12,9 +12,9 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Conture Script W01 Regular', Arial, Helvetica, sans-serif;
   text-align: center;
-  color: #ad7175;
+  color: #1f5d1b;
   padding: 1rem 0;
 }
 h1 {
@@ -25,16 +25,13 @@ h1 {
 h2 {
   font-size: 5rem;
   font-weight: normal;
-  margin-top: 2rem!important;
+  margin-top: 1rem!important;
 }
 .ccont {
   text-align: center;
 }
 a {
-  color: #ad7175;
-}
-main {
-  padding-top: 15vh;
+  color: #1f5d1b;
 }
 @media (max-width: 767px) {
   .ui.container.fluid {
@@ -45,14 +42,20 @@ main {
   width: 100vw;
   overflow: hidden;
 }
+#slider {
+  width: 100vw;
+  height: 100vh;
+  border-bottom: 1px solid #cecab5;
+}
+#slider li {
+  width: 100vw;
+}
 header {
-  border-bottom: 1px solid #bcbcbc;
-  -webkit-box-shadow: 0px 0px 36px 0px #7a7a7a;
-  -moz-box-shadow: 0px 0px 36px 0px #7a7a7a;
-  box-shadow: 0px 0px 36px 0px #7a7a7a;
   position: fixed;
-  z-index: 9;
-  background: white;
+  z-index: 10;
+  top: 80px;
+  background: #1f5d1b;
+  height: 60px;
   width: 100vw;
   transition-property: all;
   transition-duration: 0.5s;
@@ -84,7 +87,7 @@ header .container {
     align-items: center;
   }
   header #mobilenav > .container i {
-    color: #ad7175 !important;
+    color: #1f5d1b !important;
     font-size: 1.5rem!important;
     line-height: 1.5rem!important;
   }
@@ -109,7 +112,7 @@ header .container {
     transition-timing-function: ease-in-out;
   }
   header .logo {
-    height: 17vh;
+    height: 20vh;
     margin-bottom: -2vh;
     transition-property: all;
     transition-duration: 0.5s;
@@ -133,26 +136,32 @@ header .container {
 }
 @media (min-width: 767px) {
   header {
-    height: 15vh;
+    height: 60px;
     padding: 0;
   }
   header .logo {
-    height: 15vh;
+    height: 200px;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
+    margin-top: -70px;
   }
   header .logo.scrolled {
-    height: 8vh;
+    height: 90px;
+    margin-top: -25px;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
   }
   header.scrolled {
-    height: 8vh;
-    -webkit-box-shadow: 0px 0px 20px 0px #7a7a7a;
-    -moz-box-shadow: 0px 0px 20px 0px #7a7a7a;
-    box-shadow: 0px 0px 20px 0px #7a7a7a;
+    top: 20px;
+    height: 40px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+  }
+  header.scrolled .headermenuitem {
+    line-height: 40px!important;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -171,42 +180,45 @@ header .container {
 }
 header #headermenu {
   display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: none;
   width: 100%;
 }
+header #headermenu #lhm {
+  display: flex;
+  justify-content: flex-end;
+}
+header #headermenu #chm {
+  width: 227px;
+  text-align: center;
+}
+header #headermenu #rhm {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
 header #headermenu .headermenuitem {
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  color: black;
-  padding: 0 1rem 0 0;
+  line-height: 60px;
+  color: #cecab5;
+  padding: 0 2rem 0 0;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 header #headermenu .headermenuitem:hover {
-  color: #ad7175;
+  color: white;
 }
 header #headermenu .headermenuitem.active {
-  color: #ad7175;
+  color: white;
 }
-header #headermenu .headermenuitem:after {
-  content: '//';
-  margin-left: 1rem;
-}
-header #headermenu .headermenuitem:last-child:after {
-  content: '';
-}
-@media (max-width: 767px) {
-  header #headermenu .headermenuitem {
-    margin-bottom: 0.25rem;
-  }
-  header #headermenu .headermenuitem:after {
-    display: none;
-  }
+header #headermenu .headermenuitem:last-child {
+  padding: 0;
 }
 footer {
   display: flex!important;
   padding: 0 2rem;
   justify-content: space-between;
-  background: #ad7175;
+  background: #1f5d1b;
 }
 @media (max-width: 767px) {
   footer {
@@ -251,4 +263,32 @@ footer .footermenu a:after {
 }
 footer .footermenu a:last-child:after {
   content: '';
+}
+.lic {
+  height: 1rem;
+  width: 1rem;
+  background: url(/listicon.png) center center no-repeat;
+  background-size: contain;
+}
+#home h1 {
+  font-size: 7rem;
+}
+#home #intro {
+  padding: 1.5rem 0;
+}
+#home #intro #intro_content {
+  color: #1f5d1b;
+  text-align: center;
+}
+#home #intro #ics {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+#home #intro #ics .lic {
+  margin: 0 0.5rem;
+}
+.appcol img {
+  width: 90%;
+  margin-left: 10%;
 }
