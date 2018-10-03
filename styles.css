@@ -350,6 +350,23 @@ footer .footermenu a:last-child:after {
   color: #1f5d1b;
   padding: 0.5rem 1.25rem;
 }
+.sub.umg .intro {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.sub.umg .intro p {
+  text-align: center!important;
+  line-height: 2rem;
+  color: #1f5d1b;
+}
+.sub.umg .content {
+  background: #cecab5;
+  color: #1f5d1b;
+  padding: 0 4rem 4rem 4rem !important;
+}
+.sub.umg .content h2 {
+  font-size: 8rem!important;
+}
 .sub .titlewrap {
   background: #cecab5;
   margin-bottom: 3rem;
