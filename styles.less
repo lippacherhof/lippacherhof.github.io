@@ -308,15 +308,18 @@ footer{
       }
       margin-bottom:4rem;
     }
-    .anfbutton{
-      background:@green;
-      color:@beige;
-      padding:0.75rem 1.5rem;
-      font-size:1.5rem;
-      text-transform: uppercase;
-      font-weight:200;
-      letter-spacing: 0.1rem;
-    }
+  }
+}
+.anfbutton{
+  background:@green;
+  color:@beige;
+  padding:0.75rem 1.5rem;
+  font-size:1.5rem;
+  text-transform: uppercase;
+  font-weight:200;
+  letter-spacing: 0.1rem;
+  &:hover{
+    color:white;
   }
 }
 .appcol{
@@ -343,5 +346,82 @@ footer{
     background:@beige!important;
     color:@green;
     padding:0.5rem 1.25rem;
+  }
+}
+.sub{
+  .titlewrap{
+    background:@beige;
+    margin-bottom:3rem;
+    h1{
+      font-size:8rem;
+      margin:0!important;
+    }
+  }
+  &.cat{
+    .othercats{
+      padding:3rem 0;
+    }
+    h2{
+      font-family: Arial, Helvetica, sans-serif !important;
+      margin:0 0 2rem 0!important;
+      text-align:left!important;
+      font-size:1.8rem;
+    }
+    .content{
+      color:@green;
+      position:relative;
+      strong{
+        font-size:1.2rem;
+      }
+      ul{
+        margin:0;
+        padding:0;
+      }
+      li{
+        list-style-type: none;
+        padding-left:25px;
+        background:url(/listicon.png) left 0.70rem no-repeat;
+        background-size:1rem;
+        line-height:3rem;
+        p{
+          line-height:2rem;
+        }
+      }
+      .anfbutton{
+        width:100%;
+        margin-top:2rem;
+        text-align:center;
+      }
+      .pbox{
+        clear:both;
+        float:none;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .price{
+          font-weight:bold;
+          font-size:1.2rem;
+          text-transform:uppercase;
+        }
+      }
+    }
+  }
+}
+.imggal{
+  img{
+    cursor:pointer;
+  }
+  .bimg{
+    max-width:100%;
+  }
+  .simg{
+    width:32%;
+    margin-bottom:2%;
+  }
+  .imggalcol{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
   }
 }

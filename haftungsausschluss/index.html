@@ -147,6 +147,8 @@
 </footer>
 
   <script type="text/javascript" src="https://lippacherhof.github.io/lib/semantic.min.js"></script>
+  <script type="text/javascript" src="https://lippacherhof.github.io/lib/slippry.min.js"></script>
+  <link rel="stylesheet" href="https://lippacherhof.github.io/lib/slippry.min.css">
   <script type="text/javascript">
     $(function () {
       $(window).scroll(function () {
@@ -175,38 +177,32 @@
           $('#mobilemenutoggle i').removeClass('bars');
         }
       });
-      $('#kform')
-        .form({
-          fields: {
-            name: {
-              identifier: 'name',
-              rules: [
-                {
-                  type: 'empty',
-                  prompt: 'Bitte geben Sie Ihren Namen an'
-                }
-              ]
-            },
-            email: {
-              identifier: 'email',
-              rules: [
-                {
-                  type: 'email',
-                  prompt: 'Bitte geben Sie eine gültige Emailadresse an.'
-                }
-              ]
-            },
-            message: {
-              identifier: 'message',
-              rules: [
-                {
-                  type: 'minLength[5]',
-                  prompt: 'Bitte geben Sie eine Nachricht an.'
-                }
-              ]
-            }
-          }
+      $('.imggal img').click(function (el) {
+        var mid = el.currentTarget.dataset.modal;
+        var idx = el.currentTarget.dataset.idx;
+        $('#modal_' + mid).modal({ inverted: true }).modal('show');
+        $('#gal_' + mid).slippry({
+          
+          slippryWrapper: '<div class="sy-box portfolio-slider" />', 
+
+          
+          adaptiveHeight: true, 
+          start: idx + 1, 
+          loop: true, 
+          captionsSrc: 'li',
+          captions: 'custom', 
+          captionsEl: '.external-captions',
+
+          
+          transition: 'fade', 
+          easing: 'linear', 
+          continuous: true,
+
+          
+          auto: true,
+          pager: false,
         });
+      });
     });
   </script>
 </body>
