@@ -350,6 +350,60 @@ footer .footermenu a:last-child:after {
   color: #1f5d1b;
   padding: 0.5rem 1.25rem;
 }
+.subpage {
+  padding: 20vh 0 4rem 0;
+}
+.sub.kont .intro {
+  text-align: center;
+  color: #1f5d1b;
+  padding: 1rem 0 4rem 0;
+}
+.sub.kont .kdat {
+  text-align: center;
+}
+.sub.kont .kdat .buttonw {
+  margin: 4rem 0;
+}
+.sub.kont .kdat .column {
+  color: #1f5d1b;
+  display: flex;
+  justify-content: flex-start;
+}
+.sub.kont .kdat .column img {
+  margin-right: 2rem;
+}
+.sub.about .gal {
+  padding-bottom: 2rem;
+}
+.sub.about .gal h2 {
+  font-size: 8rem;
+  margin: 0px!important;
+}
+.sub.about .motto {
+  background: #cecab5;
+  color: #1f5d1b;
+  font-size: 1.5rem;
+  padding: 4rem 0;
+  margin-top: 2rem!important;
+  text-align: center;
+}
+.sub.about .mcontent .cont {
+  color: #1f5d1b;
+}
+.sub.about .mcontent .cont h2 {
+  text-align: left!important;
+}
+.sub.about .mcontent .img .deco {
+  border: 1px solid #1f5d1b;
+  width: 90%;
+  position: absolute;
+  padding-top: 60%;
+  z-index: 9;
+}
+.sub.about .mcontent .img img {
+  width: 90%;
+  margin: 10% 0 0 10%;
+}
 .sub.umg .intro {
   text-align: center;
   padding-bottom: 2rem;
@@ -431,6 +485,10 @@ footer .footermenu a:last-child:after {
 }
 .imggal .simg {
   width: 32%;
+  margin-bottom: 2%;
+}
+.imggal .simgf {
+  width: 100%;
   margin-bottom: 2%;
 }
 .imggal .imggalcol {
