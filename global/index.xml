@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Globals on Lippacher Hof</title>
-    <link>https://lippacherhof.github.io/global/</link>
+    <link>https://lippacherhof.de/global/</link>
     <description>Recent content in Globals on Lippacher Hof</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <lastBuildDate>Tue, 10 Jul 2018 18:19:54 +0000</lastBuildDate>
     
-	<atom:link href="https://lippacherhof.github.io/global/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lippacherhof.de/global/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Header</title>
-      <link>https://lippacherhof.github.io/global/header/</link>
+      <link>https://lippacherhof.de/global/header/</link>
       <pubDate>Tue, 10 Jul 2018 18:19:54 +0000</pubDate>
       
-      <guid>https://lippacherhof.github.io/global/header/</guid>
+      <guid>https://lippacherhof.de/global/header/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Footer</title>
-      <link>https://lippacherhof.github.io/global/footer/</link>
+      <link>https://lippacherhof.de/global/footer/</link>
       <pubDate>Fri, 25 May 2018 16:23:18 +0200</pubDate>
       
-      <guid>https://lippacherhof.github.io/global/footer/</guid>
+      <guid>https://lippacherhof.de/global/footer/</guid>
       <description></description>
     </item>
     
